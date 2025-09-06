@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#about</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#skills</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#projects</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Journey -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#journey</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Achievements -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#achievements</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Testimonials -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#testimonials</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Insights -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#insights</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#contact</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Resume PDF -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/Nihal%20Joshi%20Resume.pdf</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
