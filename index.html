@@ -612,6 +612,369 @@
             font-family: var(--font-code);
             font-size: 0.8rem;
         }
+
+        /* teatimonial section */
+        .testimonials-section {
+            padding: 100px 20px;
+            background-color: var(--bg-dark);
+            font-family: var(--font-body);
+            color: var(--text-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .section-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(108, 99, 255, 0.1);
+            color: var(--accent-1);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(108, 99, 255, 0.2);
+        }
+
+        .testimonials-title {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+        .testimonials-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 35px;
+            position: relative;
+            overflow: hidden;
+            border: var(--border-glass);
+            box-shadow: var(--shadow-soft);
+            transition: all var(--transition-medium);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), var(--shadow-glow-violet);
+        }
+
+        .card-decoration {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity var(--transition-medium);
+        }
+
+        .testimonial-card:hover .card-decoration {
+            opacity: 1;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+
+        .quote-icon {
+            color: var(--accent-1);
+            margin-bottom: 20px;
+            opacity: 0.8;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(108, 99, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            display: flex;
+            gap: 4px;
+        }
+
+        .star {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        .star.filled {
+            color: #ffaa33;
+        }
+
+        .star.half {
+            background: linear-gradient(to right, #ffaa33 50%, var(--text-muted) 50%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--avatar-color, var(--accent-1));
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: white;
+            transition: transform var(--transition-fast);
+        }
+
+        .testimonial-card:hover .author-avatar {
+            transform: scale(1.1);
+        }
+
+        .author-info {
+            flex: 1;
+        }
+
+        .author-name {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0 0 6px 0;
+            color: var(--text-primary);
+        }
+
+        .author-role {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .testimonial-accent {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0;
+            z-index: 1;
+            transition: opacity var(--transition-slow);
+        }
+
+        .testimonial-card:hover .testimonial-accent {
+            opacity: 0.2;
+        }
+
+        .accent-1 {
+            background: var(--accent-1);
+            top: -50px;
+            right: -50px;
+        }
+
+        .accent-2 {
+            background: var(--accent-2);
+            bottom: -50px;
+            left: -50px;
+        }
+
+        .accent-3 {
+            background: var(--accent-3);
+            top: -50px;
+            left: -50px;
+        }
+
+        .testimonials-cta {
+            text-align: center;
+            padding: 60px 40px;
+            border-radius: var(--radius-lg);
+            background: var(--bg-card);
+            border: var(--border-glass);
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-1);
+            opacity: 0.03;
+            z-index: 1;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonials-cta h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .testimonials-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: var(--text-secondary);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            background: var(--gradient-1);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            transition: all var(--transition-medium);
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow-cyan);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .testimonials-section {
+                padding: 60px 15px;
+            }
+            
+            .testimonials-title {
+                font-size: 2.2rem;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .testimonial-card {
+                padding: 25px;
+            }
+            
+            .testimonials-cta {
+                padding: 40px 25px;
+            }
+            
+            .testimonials-cta h3 {
+                font-size: 1.7rem;
+            }
+        }
+
+        /* Animation for cards on load */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .testimonial-card {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .testimonial-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .testimonial-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .testimonial-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+
         /* Blog Section */
         .blog-grid {
             display: grid;
@@ -937,296 +1300,6 @@
         .back-to-top:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-glow-coral);
-        }
-
-        /* Testimonials Section */
-        #testimonials {
-            padding: 4rem 2rem;
-            min-height: auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .testimonials-wrapper {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .testimonial-slider {
-            overflow: hidden;
-            margin: 1.5rem 0 2.5rem;
-            position: relative;
-            cursor: grab;
-        }
-
-        .testimonial-slider:active {
-            cursor: grabbing;
-        }
-
-        .testimonial-track {
-            display: flex;
-            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-            gap: 20px;
-            will-change: transform;
-        }
-
-        .testimonial-slide {
-            flex: 0 0 calc(33.333% - 14px);
-            min-width: 0;
-            box-sizing: border-box;
-            transition: transform 0.3s ease;
-        }
-
-        .testimonial-slide.active {
-            transform: scale(1.03);
-        }
-
-        .testimonial-card {
-            background: var(--bg-card);
-            border-radius: var(--radius-lg);
-            border: var(--border-glass);
-            box-shadow: var(--shadow-soft), var(--shadow-glow-violet);
-            padding: 1.8rem;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .testimonial-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--gradient-1);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.3s ease;
-        }
-
-        .testimonial-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-soft), var(--shadow-glow-cyan);
-        }
-
-        .quote-icon {
-            font-size: 1.5rem;
-            color: var(--accent-1);
-            margin-bottom: 1rem;
-            opacity: 0.7;
-            transition: transform 0.3s ease;
-        }
-
-        .testimonial-card:hover .quote-icon {
-            transform: rotate(10deg);
-        }
-
-        .testimonial-content {
-            flex: 1;
-            margin-bottom: 1.2rem;
-        }
-
-        .testimonial-text {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 1.2rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .rating {
-            display: flex;
-            gap: 0.2rem;
-            margin-bottom: 1.2rem;
-        }
-
-        .rating i {
-            color: var(--accent-4);
-            font-size: 0.9rem;
-            transition: transform 0.2s ease;
-        }
-
-        .rating i:hover {
-            transform: scale(1.3);
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 1.2rem;
-        }
-
-        .author-avatar {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 0.8rem;
-            border: 2px solid var(--accent-1);
-            box-shadow: var(--shadow-glow-violet);
-            transition: all 0.3s ease;
-        }
-
-        .testimonial-card:hover .author-avatar {
-            border-color: var(--accent-2);
-            transform: scale(1.05);
-        }
-
-        .author-info h4 {
-            margin-bottom: 0.2rem;
-            font-size: 0.95rem;
-            font-family: var(--font-heading);
-        }
-
-        .author-role {
-            color: var(--accent-2);
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .testimonial-indicators {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .testimonial-dots {
-            display: flex;
-            gap: 0.8rem;
-        }
-
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--text-muted);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .dot::before {
-            content: '';
-            position: absolute;
-            top: -4px;
-            left: -4px;
-            right: -4px;
-            bottom: -4px;
-            border-radius: 50%;
-            border: 2px solid var(--accent-1);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .dot:hover::before {
-            opacity: 0.5;
-        }
-
-        .dot.active {
-            background: var(--accent-1);
-            transform: scale(1.2);
-            box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
-        }
-
-        .slider-progress {
-            width: 120px;
-            height: 3px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 3px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .progress-bar {
-            position: absolute;
-            height: 100%;
-            width: 0%;
-            background: var(--gradient-1);
-            transition: width 0.1s linear;
-        }
-
-        /* Swipe animation helper */
-        .swipe-help {
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            opacity: 0.7;
-        }
-
-        .swipe-help i {
-            animation: swipe 2s infinite;
-        }
-
-        @keyframes swipe {
-            0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(10px); }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .testimonial-slide {
-                flex: 0 0 calc(50% - 10px);
-            }
-        }
-
-        @media (max-width: 768px) {
-            #testimonials {
-                padding: 3rem 1.5rem;
-            }
-            
-            .testimonial-slide {
-                flex: 0 0 100%;
-            }
-            
-            .testimonial-card {
-                padding: 1.5rem;
-            }
-            
-            .testimonial-text {
-                font-size: 0.9rem;
-                -webkit-line-clamp: 5;
-            }
-            
-            .author-avatar {
-                width: 40px;
-                height: 40px;
-            }
-            
-            .swipe-help {
-                display: none;
-            }
-        }
-
-        /* Decorative elements */
-        .testimonial-decoration {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background: var(--accent-1);
-            opacity: 0.05;
-            border-radius: 50%;
-            filter: blur(40px);
-            z-index: -1;
         }
 
         .decoration-1 {
@@ -1555,123 +1628,118 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <div class="container">
-            <h2>Client Testimonials</h2>
-            <div class="testimonials-wrapper">
-                <div class="testimonial-slider">
-                    <div class="testimonial-track">
-                        <!-- Testimonial 1 -->
-                        <div class="testimonial-slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    <div class="quote-icon">
-                                        <i class="fas fa-quote-left"></i>
-                                    </div>
-                                    <p class="testimonial-text">Nihal is highly skilled and dedicated. He transformed our outdated website into a modern, responsive platform. His attention to detail and problem-solving ability impressed the entire team.</p>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="testimonial-author">
-                                    <div class="author-info">
-                                        <h4>Ankit Desai</h4>
-                                        <p class="author-role">Project Manager</p>
-                                    </div>
-                                </div>
-                            </div>
+
+    <!-- testimonial section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <div class="section-badge">Testimonials</div>
+                <h2 class="testimonials-title">Client Experiences</h2>
+                <p class="testimonials-subtitle">What industry leaders and collaborators say about working together</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="card-decoration"></div>
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="24" height="18" viewBox="0 0 24 18" fill="none">
+                                <path d="M0 18V12.06C0 8.52 1.08 5.7 3.24 3.6C5.4 1.5 8.16 0.36 11.52 0.18V4.32C9.84 4.5 8.52 5.16 7.56 6.3C6.6 7.38 6.12 8.76 6.12 10.44H10.92V18H0ZM13.08 18V12.06C13.08 8.52 14.16 5.7 16.32 3.6C18.48 1.5 21.24 0.36 24.6 0.18V4.32C22.92 4.5 21.6 5.16 20.64 6.3C19.68 7.38 19.2 8.76 19.2 10.44H24V18H13.08Z" fill="currentColor"/>
+                            </svg>
                         </div>
-                        
-                        <!-- Testimonial 2 -->
-                        <div class="testimonial-slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    <div class="quote-icon">
-                                        <i class="fas fa-quote-left"></i>
-                                    </div>
-                                    <p class="testimonial-text">Working with Nihal was an excellent experience. He not only developed our platform efficiently but also suggested creative ideas that improved user experience. Truly a reliable developer.</p>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                </div>
-                                <div class="testimonial-author">
-                                    <div class="author-info">
-                                        <h4>Kavya Nair</h4>
-                                        <p class="author-role">Founder</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Testimonial 3 -->
-                        <div class="testimonial-slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    <div class="quote-icon">
-                                        <i class="fas fa-quote-left"></i>
-                                    </div>
-                                    <p class="testimonial-text">Nihal has strong technical expertise in frontend and backend development. His clean code practices and ability to meet deadlines make him stand out as a professional.</p>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="testimonial-author">
-                                    <div class="author-info">
-                                        <h4>Rohit Malhotra</h4>
-                                        <p class="author-role">Senior Software Engineer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Testimonial 4 -->
-                        <div class="testimonial-slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    <div class="quote-icon">
-                                        <i class="fas fa-quote-left"></i>
-                                    </div>
-                                    <p class="testimonial-text">We collaborated with Nihal on multiple projects. His blend of creativity and technical knowledge makes him a complete package. I would highly recommend him for any web development project.</p>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="testimonial-author">
-                                    <div class="author-info">
-                                        <h4>Neha Kulkarni</h4>
-                                        <p class="author-role">Marketing Head</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <p class="testimonial-text">Working with this designer was an absolute pleasure. Their attention to detail and innovative approach transformed our brand identity completely, resulting in a 40% increase in user engagement.</p>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
                         </div>
                     </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="--avatar-color: var(--accent-1)">
+                            <span class="avatar-initials">SJ</span>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Johnson</h4>
+                            <p class="author-role">Marketing Director, TechCorp</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-accent accent-1"></div>
                 </div>
                 
-                <div class="testimonial-indicators">
-                    <div class="testimonial-dots">
-                        <span class="dot active" data-index="0"></span>
-                        <span class="dot" data-index="1"></span>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="card-decoration"></div>
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="24" height="18" viewBox="0 0 24 18" fill="none">
+                                <path d="M0 18V12.06C0 8.52 1.08 5.7 3.24 3.6C5.4 1.5 8.16 0.36 11.52 0.18V4.32C9.84 4.5 8.52 5.16 7.56 6.3C6.6 7.38 6.12 8.76 6.12 10.44H10.92V18H0ZM13.08 18V12.06C13.08 8.52 14.16 5.7 16.32 3.6C18.48 1.5 21.24 0.36 24.6 0.18V4.32C22.92 4.5 21.6 5.16 20.64 6.3C19.68 7.38 19.2 8.76 19.2 10.44H24V18H13.08Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">The website redesign exceeded our expectations. The user experience improved dramatically, and our conversion rates increased by 40% within the first month of launch.</p>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
                     </div>
-                    <div class="slider-progress">
-                        <div class="progress-bar"></div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="--avatar-color: var(--accent-2)">
+                            <span class="avatar-initials">MC</span>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Michael Chen</h4>
+                            <p class="author-role">CEO, Innovate Labs</p>
+                        </div>
                     </div>
+                    <div class="testimonial-accent accent-2"></div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="card-decoration"></div>
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="24" height="18" viewBox="0 0 24 18" fill="none">
+                                <path d="M0 18V12.06C0 8.52 1.08 5.7 3.24 3.6C5.4 1.5 8.16 0.36 11.52 0.18V4.32C9.84 4.5 8.52 5.16 7.56 6.3C6.6 7.38 6.12 8.76 6.12 10.44H10.92V18H0ZM13.08 18V12.06C13.08 8.52 14.16 5.7 16.32 3.6C18.48 1.5 21.24 0.36 24.6 0.18V4.32C22.92 4.5 21.6 5.16 20.64 6.3C19.68 7.38 19.2 8.76 19.2 10.44H24V18H13.08Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">Outstanding creativity and technical expertise. They delivered our project ahead of schedule while maintaining the highest quality standards. Will definitely collaborate again.</p>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="--avatar-color: var(--accent-3)">
+                            <span class="avatar-initials">ER</span>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Elena Rodriguez</h4>
+                            <p class="author-role">Product Manager, Visionary Inc</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-accent accent-3"></div>
+                </div>
+            </div>
+            
+            <div class="testimonials-cta">
+                <div class="cta-content">
+                    <h3>Ready to create something amazing?</h3>
+                    <p>Let's discuss how we can bring your vision to life</p>
+                    <a href="#contact" class="cta-button">
+                        <span>Start a Project</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
