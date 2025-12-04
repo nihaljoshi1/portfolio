@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 User-agent: *
 Disallow:
 
 Sitemap: https://nihaljoshi1.github.io/portfolio/sitemap.xml
+=======
+User-agent: *
+Disallow:
+
+Sitemap: https://nihaljoshi1.github.io/portfolio/sitemap.xml
+>>>>>>> bacd6fc00addac16ee9dac492f04599caea1f50c
