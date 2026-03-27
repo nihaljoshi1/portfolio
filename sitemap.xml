@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -46,19 +47,59 @@
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+>>>>>>> 24a149b0c9523ec9b087fccc8959277e2936de12
   </url>
 
   <!-- About -->
   <url>
     <loc>https://nihaljoshi1.github.io/portfolio/#about</loc>
+<<<<<<< HEAD
     <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
+=======
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#skills</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#projects</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Journey -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#journey</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Achievements -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#achievements</loc>
+>>>>>>> 24a149b0c9523ec9b087fccc8959277e2936de12
     <priority>0.8</priority>
   </url>
 
   <!-- Testimonials -->
   <url>
     <loc>https://nihaljoshi1.github.io/portfolio/#testimonials</loc>
+<<<<<<< HEAD
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -70,14 +111,104 @@
     <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+=======
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Insights -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#insights</loc>
+    <priority>0.8</priority>
+>>>>>>> 24a149b0c9523ec9b087fccc8959277e2936de12
   </url>
 
   <!-- Contact -->
   <url>
     <loc>https://nihaljoshi1.github.io/portfolio/#contact</loc>
+<<<<<<< HEAD
     <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
 </urlset>
+=======
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Resume PDF -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/Nihal%20Joshi%20Resume.pdf</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#about</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#skills</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#projects</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Journey -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#journey</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Achievements -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#achievements</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Testimonials -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#testimonials</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Insights -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#insights</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/#contact</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Resume PDF -->
+  <url>
+    <loc>https://nihaljoshi1.github.io/portfolio/Nihal%20Joshi%20Resume.pdf</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
+>>>>>>> bacd6fc00addac16ee9dac492f04599caea1f50c
+>>>>>>> 24a149b0c9523ec9b087fccc8959277e2936de12
